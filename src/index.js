@@ -1,7 +1,8 @@
 const adviceSlip = document.getElementById("randomAdvice");
+const btn = document.getElementById('btn');
 
 //Simple Fetch request
-
+const newQuote = function (){
 fetch(`https://api.adviceslip.com/advice`)
   //getting json here
   .then((response) => response.json())
@@ -16,4 +17,5 @@ fetch(`https://api.adviceslip.com/advice`)
       console.error("Error fetching data:", error);
     }
     //ERROR HANDLING HAPPENS HERE
-  );
+  )
+};
